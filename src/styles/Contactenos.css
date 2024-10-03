@@ -1,0 +1,78 @@
+.div-bgcont {
+    background-image: url('../images/servicos.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Full viewport height */
+    position: relative;
+    padding-bottom: 5%;
+  }
+  .contact-form-container {
+    width: 100%; /* Full width */
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    max-width: 800px; /* Optionally set a maximum width */
+    margin: 0 auto; /* Center align the form container */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #d3d3d3;
+    resize: none;
+  }
+  
+  .form-input {
+    height: 50px;
+  }
+  
+  .form-textarea {
+    height: 120px;
+  }
+  
+  .submit-button {
+    background-color: #8000ff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #4e0096;
+  }
+  
+  /* Set the background and remove side white spaces */
+  .div-bgcont {
+    width: 100%;
+    padding: 40px; /* Padding to keep some space on the sides */
+    box-sizing: border-box; /* Include padding in the element’s width */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  

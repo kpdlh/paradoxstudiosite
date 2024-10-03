@@ -1,0 +1,29 @@
+.title{
+    font-size: 6.25rem; /* Converted from 100px */
+    font-weight: bold; /* Make the title bold */
+    color: #f5d707; /* Yellow color */
+    margin-bottom: 1.875rem; /* Converted from 30px */
+    text-transform: uppercase; /* Uppercase letters */
+    text-align: center;
+    padding-top: 3.125rem; /* Converted from 50px */
+}
+
+.subtitle{
+    font-size: 2.5rem; /* Converted from 40px */
+    font-weight: 700; /* Bold subheadings */
+    margin-bottom: 0.9375rem; /* Converted from 15px */
+    margin-top: 0.9375rem; /* Converted from 15px */
+    text-transform: uppercase; /* Uppercase letters */
+    color: #ffffff; /* White color */
+    font-style: italic;
+    padding-left: 9.375rem; /* Converted from 150px */
+    padding-right: 9.375rem; /* Converted from 150px */
+}
+
+.normal_text{
+    font-size: 1.5625rem; /* Converted from 25px */
+    color: #ffffff; /* White color */
+    margin-bottom: 1.875rem; /* Converted from 30px */
+    padding-left: 9.375rem; /* Converted from 150px */
+    padding-right: 9.375rem; /* Converted from 150px */
+}

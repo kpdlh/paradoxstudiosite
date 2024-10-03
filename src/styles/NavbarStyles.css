@@ -1,0 +1,31 @@
+/* src/styles/NavbarStyles.css */
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px; /* Set a fixed height */
+  padding: 0 px; /* Optional: Adds padding to the sides */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Applies the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support for the blur effect */
+}
+
+.logo img {
+  height: 40px;
+}
+
+@media (max-width: 100%) {
+  .container {
+    flex-direction: column;
+  }
+
+  ul {
+    display: none; /* Hide the links on small screens */
+  }
+}
+
+  

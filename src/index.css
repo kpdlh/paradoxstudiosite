@@ -1,13 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Apply Poppins font globally */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Different font weights */
+h1 {
+  font-weight: 700; /* Bold */
 }
+
+h2 {
+  font-weight: 600; /* SemiBold */
+}
+
+p {
+  font-weight: 400; /* Regular */
+}
+
+/* Applying Italic Style */
+.italic-text {
+  font-style: italic;
+}
+
+/* Custom styling */
+.custom-heading {
+  font-weight: 600;  /* SemiBold */
+  text-transform: uppercase; /* All uppercase */
+  letter-spacing: 2px; /* Adjust letter spacing */
+}
+
+a {
+  font-weight: 700; /* Bold */
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for the entire page */
+}
+
+
+

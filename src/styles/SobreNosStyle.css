@@ -1,0 +1,9 @@
+.div-bgsobre {
+    background-image: url('../images/sobre_nos_bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Full viewport height */
+    position: relative;
+    padding-bottom: 5%;
+  }
+

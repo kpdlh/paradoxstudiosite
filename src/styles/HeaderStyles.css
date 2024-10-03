@@ -1,0 +1,18 @@
+.header-bg {
+    background-image: url('../images/attractive-radio-host-in-headphones-taking-selfie-2023-11-27-05-06-49-utc.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 767px; /* Full viewport height */
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
