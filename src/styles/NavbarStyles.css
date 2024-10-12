@@ -18,14 +18,5 @@
   height: 40px;
 }
 
-@media (max-width: 100%) {
-  .container {
-    flex-direction: column;
-  }
-
-  ul {
-    display: none; /* Hide the links on small screens */
-  }
-}
 
   

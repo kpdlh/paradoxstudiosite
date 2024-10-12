@@ -9,4 +9,12 @@ img {
 .hero-section{
     padding-top: 194px;
 }
-  
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px; /* Adjust padding for smaller screens */
+  }
+
+  img {
+    object-fit: contain; /* Prevent the image from covering too much on smaller screens */
+  }
+}

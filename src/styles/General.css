@@ -1,5 +1,5 @@
 .title{
-    font-size: 6.25rem; /* Converted from 100px */
+    font-size: 5rem; /* Converted from 100px */
     font-weight: bold; /* Make the title bold */
     color: #f5d707; /* Yellow color */
     margin-bottom: 1.875rem; /* Converted from 30px */
@@ -26,4 +26,31 @@
     margin-bottom: 1.875rem; /* Converted from 30px */
     padding-left: 9.375rem; /* Converted from 150px */
     padding-right: 9.375rem; /* Converted from 150px */
+}
+
+
+
+
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+    .subtitle, .normal_text {
+        padding-left: 1.5rem; /* Reduced padding for smaller screens */
+        padding-right: 1.5rem; /* Reduced padding for smaller screens */
+    }
+
+    .title {
+        padding-top: 1.5rem; /* Reduced top padding for smaller screens */
+        font-size: 3rem; /* Reduced font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1.875rem; /* Adjusted subtitle font size */
+    }
+
+    .normal_text {
+        font-size: 1.25rem; /* Adjusted text size */
+    }
+
+
 }

@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin; /* Reduced size for better mobile experience */
   pointer-events: none;
 }
 
@@ -20,8 +20,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin); /* Adjust font size for better mobile scaling */
   color: white;
+  padding: 20px; /* Add padding for mobile devices */
 }
 
 .App-link {
@@ -40,4 +41,28 @@
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling for the entire page */
 }
+
+/* Media queries for responsiveness on smaller devices */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(9px + 1.5vmin); /* Smaller font size for tablets */
+  }
+
+  .App-logo {
+    height: 35vmin; /* Increase logo size slightly for better appearance */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(8px + 1vmin); /* Further reduce font size for smaller screens */
+    padding: 10px; /* Add more padding for mobile */
+  }
+
+  .App-logo {
+    height: 40vmin; /* Larger logo for small screens */
+  }
+}
+
+
 

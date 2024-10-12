@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div class="w-full max-w-screen overflow-x-hidden">
       {/* Pass the scroll function and refs to Header */}
       <div ref={inicioRef}>
       <Header
