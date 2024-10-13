@@ -19,7 +19,6 @@
 }
 
 /* Mobile styles */
-/* Mobile styles */
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
@@ -35,11 +34,15 @@
   }
 
   .contact-btn {
+    display: none; /* Hide larger button on mobile */
+  }
+
+  .contact-btn-small {
     position: absolute;
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
-    display: block;
+    display: block; /* Show smaller button on mobile */
     font-size: 12px;
     padding: 6px 12px;
   }
@@ -88,23 +91,16 @@
   .mobile-menu li a:hover {
     color: teal;
   }
-
-  /* Hide the navigation links in mobile view */
-  .hidden {
-    display: none;
-  }
-
-  /* Make menu visible */
-  .block {
-    display: block;
-  }
-
-    /* Display the contact button on the right */
-    .contact-btn {
-      position: absolute;
-      right: 16px; /* Adjust the distance from the right side */
-      top: 50%;
-      transform: translateY(-50%);
-      display: block; /* Ensure it's visible */
-    }
 }
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .contact-btn-small {
+    display: none; /* Hide smaller button on desktop */
+  }
+
+  .contact-btn {
+    display: block; /* Show larger button on desktop */
+  }
+}
+

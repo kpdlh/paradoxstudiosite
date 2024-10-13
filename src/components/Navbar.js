@@ -55,9 +55,16 @@ const Navbar = ({ inicioRef, scrollToSection, sobrenosRef, servicosRef, portfoli
           <li><a href="#portfolio" className="hover:text-teal-400" onClick={() => scrollToSection(portfolioRef)}>PORTFÓLIO</a></li>
         </ul>
 
-        {/* Contact Button for Desktop */}
+        {/* Contact Button for Desktop (Large Button) */}
         <div className="hidden md:block contact-btn">
           <a href="#contact" className="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-700" onClick={() => scrollToSection(contactRef)}>
+            Contacte-nos
+          </a>
+        </div>
+
+        {/* Contact Button for Mobile (Smaller Button) */}
+        <div className="md:hidden contact-btn-small">
+          <a href="#contact" className="bg-purple-500 text-white px-2 py-1 text-sm rounded-md hover:bg-purple-700" onClick={() => scrollToSection(contactRef)}>
             Contacte-nos
           </a>
         </div>
@@ -67,6 +74,7 @@ const Navbar = ({ inicioRef, scrollToSection, sobrenosRef, servicosRef, portfoli
 };
 
 export default Navbar;
+
 
 
 
