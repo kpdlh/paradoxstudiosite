@@ -18,5 +18,93 @@
   height: 40px;
 }
 
+/* Mobile styles */
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    height: 80px;
+    padding-top: 10px;
+  }
 
-  
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%);
+  }
+
+  .contact-btn {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+
+  /* Mobile menu styles */
+  .mobile-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .mobile-menu li {
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  .mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-menu li a:hover {
+    color: teal;
+  }
+
+  /* Hide the navigation links in mobile view */
+  .hidden {
+    display: none;
+  }
+
+  /* Make menu visible */
+  .block {
+    display: block;
+  }
+
+    /* Display the contact button on the right */
+    .contact-btn {
+      position: absolute;
+      right: 16px; /* Adjust the distance from the right side */
+      top: 50%;
+      transform: translateY(-50%);
+      display: block; /* Ensure it's visible */
+    }
+}

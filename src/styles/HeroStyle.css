@@ -1,20 +1,24 @@
 /* Ensure the image scales properly */
 img {
-    max-width: 100%;   /* Prevents the image from growing larger than its container */
-    height: auto;      /* Maintains the aspect ratio of the image */
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
-    display: block;    /* Removes any extra space below the image */
-  }        
-
-.hero-section{
-    padding-top: 194px;
+  max-width: 100%;   /* Prevents the image from growing larger than its container */
+  height: auto;      /* Maintains the aspect ratio of the image */
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  display: block;    /* Removes any extra space below the image */
+  margin-left: auto; /* Aligns the image horizontally */
+  margin-right: auto; /* Aligns the image horizontally */
 }
-@media screen and (max-width: 768px) {
-  .hero-section {
-    padding-top: 100px; /* Adjust padding for smaller screens */
-  }
 
-  img {
-    object-fit: contain; /* Prevent the image from covering too much on smaller screens */
-  }
+.hero-section {
+  padding-top: 194px;
+  text-align: center; /* Ensures the image stays centered */
+}
+
+@media screen and (max-width: 768px) {
+.hero-section {
+  padding-top: 100px; /* Adjust padding for smaller screens */
+}
+
+img {
+  object-fit: contain; /* Prevent the image from covering too much on smaller screens */
+}
 }

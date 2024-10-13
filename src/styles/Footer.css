@@ -44,5 +44,27 @@
     font-size: 14px;
     color: #ccc;
   }
+
+  /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center;
+    gap: 30px; /* Reduce the gap between sections */
+  }
+
+  .footer-section {
+    text-align: center; /* Center the text on smaller screens */
+  }
+
+  .social-links {
+    justify-content: center; /* Center the social icons */
+    gap: 10px; /* Reduce the space between social icons */
+  }
+
+  .footer-bottom {
+    font-size: 12px; /* Slightly smaller text for smaller devices */
+  }
+}
   
   

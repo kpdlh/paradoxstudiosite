@@ -17,9 +17,13 @@ function App() {
   // Function to scroll to a section
   const scrollToSection = (ref) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({
+        top: ref.current.offsetTop - 80, // Adjust the value (80) to your navbar's height
+        behavior: 'smooth',
+      });
     }
   };
+  
 
   return (
     <div class="w-full max-w-screen overflow-x-hidden">
