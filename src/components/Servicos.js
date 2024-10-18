@@ -14,12 +14,12 @@ const Servicos = () => {
                 <ul className='list'>
                     <li >Eventos Corporativos</li>
                     <li >Eventos Sociais</li>
-                    <li >Produção de video e fotografia</li>
+                    <li >Produção de vídeo e fotografia</li>
                 </ul>
                 <h2 className='subtitle'>Criação de conteúdo</h2>
                 <ul className='list'>
                     <li >Design Gráfico</li>
-                    <li >Videos Promocionais</li>
+                    <li >Vídeos Promocionais</li>
                     <li >Efeitos Visuais e Motion Graphics</li>
                 </ul>
                 

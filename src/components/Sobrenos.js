@@ -12,7 +12,7 @@ const Sobrenos = () => {
                 <h2 className='subtitle'>Quem somos?</h2>
                 <p className='normal_text'>Na Paradox Studios, somos apaixonados por transformar visões em realidade. Com uma equipa dedicada e criativa, oferecemos soluções inovadoras para a gestão de redes sociais, cobertura de eventos e produção de conteúdo audiovisual.</p>
                 <h2 className='subtitle'>O que fazemos?</h2>
-                <p className='normal_text'>A nossa missão é criar conteúdo que não apenas ressoe, mas que também inspire e envolva público.</p>   
+                <p className='normal_text'>A nossa missão é criar conteúdo que não apenas ressoe, mas que também inspire e envolva o público.</p>   
             </div>
                
         </div>
