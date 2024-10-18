@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/MediaGrid.css'; // Import your custom styles
 
 // Import images and videos
@@ -35,32 +35,68 @@ const mediaItems = [
   { type: "image", src: image11, alt: "Image 11" },
   { type: "image", src: image12, alt: "Image 12" },
   { type: "image", src: image13, alt: "Image 13" }
-
 ];
 
 const MediaGrid = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState('');
+
+  // Function to open the lightbox for mobile devices
+  const openLightbox = (videoSrc) => {
+    if (window.innerWidth <= 768) { // Only trigger lightbox on mobile devices
+      setCurrentVideo(videoSrc);
+      setLightboxOpen(true);
+    }
+  };
+
+  // Function to close the lightbox
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    setCurrentVideo('');
+  };
+
   return (
-    <div className="media-grid">
-      {mediaItems.map((item, index) => (
-        <div className="media-item" key={index}>
-          {item.type === "image" ? (
-            <img src={item.src} alt={item.alt} />
-          ) : (
+    <div>
+      <div className="media-grid">
+        {mediaItems.map((item, index) => (
+          <div className="media-item" key={index}>
+            {item.type === "image" ? (
+              <img src={item.src} alt={item.alt} />
+            ) : (
+              <iframe
+                src={item.src}
+                title={item.alt}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                onClick={() => openLightbox(item.src)} // Open lightbox on video click
+              ></iframe>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Lightbox for videos */}
+      {lightboxOpen && (
+        <div className="lightbox">
+          <div className="lightbox-content">
             <iframe
-              src={item.src}
-              title={item.alt}
+              src={currentVideo}
+              title="Lightbox Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          )}
+            <button className="close-lightbox" onClick={closeLightbox}>×</button>
+          </div>
         </div>
-      ))}
+      )}
     </div>
   );
 };
 
 export default MediaGrid;
+
 
 
 

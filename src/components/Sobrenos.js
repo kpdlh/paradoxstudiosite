@@ -10,9 +10,9 @@ const Sobrenos = () => {
             <div className="flexx">
             
                 <h2 className='subtitle'>Quem somos?</h2>
-                <p className='normal_text'>Na Paradox Studios, somos apaixonados por transformar visões em realidade. Com uma equipa dedicada e criativa, oferecemos soluções inovadoras para gerenciamento de redes sociais e cobertura de eventos.</p>
+                <p className='normal_text'>Na Paradox Studios, somos apaixonados por transformar visões em realidade. Com uma equipa dedicada e criativa, oferecemos soluções inovadoras para a gestão de redes sociais, cobertura de eventos e produção de conteúdo audiovisual.</p>
                 <h2 className='subtitle'>O que fazemos?</h2>
-                <p className='normal_text'>A nossa missão é criar conteúdo que não apenas ressoe com o público, mas que também inspire e envolva.</p>   
+                <p className='normal_text'>A nossa missão é criar conteúdo que não apenas ressoe, mas que também inspire e envolva público.</p>   
             </div>
                
         </div>
